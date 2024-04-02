@@ -56,6 +56,11 @@ public class Hora {
 		}
 	}
 
+	/**
+	 * Método para establecer los minutos
+	 * @param minutos
+	 * @return
+	 */
 	public boolean setMinutos(int minutos) {
 		boolean sePuede = false;
 
@@ -72,6 +77,11 @@ public class Hora {
 		return sePuede;
 	}
 
+	/**
+	 * Método para establecer las horas
+	 * @param hora
+	 * @return
+	 */
 	public boolean setHora(int hora) {
 		boolean sePuede = false;
 
@@ -85,7 +95,10 @@ public class Hora {
 
 		return sePuede;
 	}
-
+	
+	/**
+	 * Método toString para obtener la representación de la hora exacta
+	 */
 	public String toString() {
 		String horaCompleta = "";
 
