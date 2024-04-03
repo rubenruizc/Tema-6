@@ -1,17 +1,45 @@
 package ejercicio03;
 
-public class Perecedero {
+public class Perecedero extends Productos {
 
-	private int díasACaducar;
+	private int diasACaducar;
 
+	public Perecedero(String nombre, double precio, int díasACaducar) {
+		super(nombre, precio);
 
+		if (diasACaducar > -1) {
+			this.diasACaducar = díasACaducar;
 
+		}
+	}
 
+	public int getDiasCaducar() {
+		return diasACaducar;
+	}
+
+	public void setDiasCaducar(int díasACaducar) {
+		if (diasACaducar > -1) {
+			this.diasACaducar = díasACaducar;
+
+		}
+	}
 
 	public String toString() {
-		 String infoProducto = "";
-		 infoProducto = "Nombre: " + this.díasACaducar;
-		 return infoProducto;
+		String infoProducto = "";
+		infoProducto = super.toString() + "\nDias para caducar: " + this.diasACaducar;
+		return infoProducto;
 	}
-	
+
+	public double calcular(int cantidad) {
+		double precioFinal = super.calcular(cantidad);
+		if (diasACaducar == 1) {
+			precioFinal /= 4;
+		} else if (diasACaducar == 2) {
+			precioFinal /= 3;
+		} else if (diasACaducar == 3) {
+			precioFinal /= 2;
+		}
+		return precioFinal;
+	}
+
 }

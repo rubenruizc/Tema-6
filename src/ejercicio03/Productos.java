@@ -58,11 +58,14 @@ public class Productos {
 
 		}
 	}
-	
+
 	public String toString() {
-		 String infoProducto = "";
-		 infoProducto = "Nombre: " + this.nombre + "\nPrecio:" + this.precio;
-		 return infoProducto;
+		String infoProducto = "";
+		infoProducto = "\nNombre: " + this.nombre + "\nPrecio:" + this.precio;
+		return infoProducto;
 	}
 
+	public double calcular(int cantidad) {
+		return precio * cantidad;
+	}
 }
