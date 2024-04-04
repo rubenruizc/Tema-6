@@ -5,12 +5,12 @@ public class Hora {
 	/**
 	 * Atributo privado donde almacenaremos las horas
 	 */
-	private int hora;
+	protected int hora;
 
 	/**
 	 * Atributo privado donde almacenaremos los minutos
 	 */
-	private int minutos;
+	protected int minutos;
 
 	/**
 	 * Constructor con los parámetros de hora y minutos
@@ -58,6 +58,7 @@ public class Hora {
 
 	/**
 	 * Método para establecer los minutos
+	 * 
 	 * @param minutos
 	 * @return
 	 */
@@ -79,6 +80,7 @@ public class Hora {
 
 	/**
 	 * Método para establecer las horas
+	 * 
 	 * @param hora
 	 * @return
 	 */
@@ -95,7 +97,7 @@ public class Hora {
 
 		return sePuede;
 	}
-	
+
 	/**
 	 * Método toString para obtener la representación de la hora exacta
 	 */
@@ -107,10 +109,10 @@ public class Hora {
 
 		} else if (this.hora < 10) {
 			horaCompleta = "0" + this.hora + ":" + this.minutos;
-			
+
 		} else if (this.minutos < 10) {
 			horaCompleta = this.hora + ":" + "0" + this.minutos;
-			
+
 		} else {
 			horaCompleta = this.hora + ":" + this.minutos;
 		}

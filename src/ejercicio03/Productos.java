@@ -5,12 +5,12 @@ public class Productos {
 	/**
 	 * Atributo donde guardaremos el nombre del producto
 	 */
-	private String nombre;
+	protected String nombre;
 
 	/**
 	 * Atributo donde guardaremos el precio del producto
 	 */
-	private double precio;
+	protected double precio;
 
 	/**
 	 * Constructor vacío

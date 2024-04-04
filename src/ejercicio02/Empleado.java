@@ -5,12 +5,12 @@ public class Empleado {
 	/**
 	 * Atributo donde guardaremos el nombre del empleado
 	 */
-	private String nombre;
+	protected String nombre;
 
 	/**
 	 * Constructor vacío
 	 */
-	public Empleado() {
+	protected Empleado() {
 
 	}
 
