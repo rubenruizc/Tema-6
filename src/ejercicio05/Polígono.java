@@ -5,7 +5,7 @@ public abstract class Polígono {
 	/**
 	 * Atributo que almacena el número de lados
 	 */
-	private int numeroLados;
+	protected int numeroLados;
 
 	/**
 	 * Constructor vacío

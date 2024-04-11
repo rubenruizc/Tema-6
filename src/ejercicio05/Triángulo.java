@@ -83,10 +83,9 @@ public class Triángulo extends Polígono {
 	public String toString() {
 		String info = "";
 		info += "Triángulo";
-		info += "Lado 1: " + this.lado1;
-		info += "Lado 2: " + this.lado2;
-		info += "Lado 3: " + this.lado3;
-		info += "Área: " + area();
+		info += " Lado 1: " + this.lado1;
+		info += " Lado 2: " + this.lado2;
+		info += " Lado 3: " + this.lado3;
 
 		return info;
 	}
