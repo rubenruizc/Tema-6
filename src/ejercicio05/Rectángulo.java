@@ -70,6 +70,9 @@ public class Rectángulo extends Polígono {
 		return area;
 	}
 	
+	/**
+	 * Método que muestra la información del rectángulo
+	 */
 	public String toString() {
 		String info = "";
 		info += "Rectángulo";

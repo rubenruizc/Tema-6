@@ -53,7 +53,7 @@ public abstract class Polígono {
 	 * @return devuel el área del polígono
 	 */
 	abstract double area();
-	
+
 	/**
 	 * Método que devuelve la información del polígono
 	 *
