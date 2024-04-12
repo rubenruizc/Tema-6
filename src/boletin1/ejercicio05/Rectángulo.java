@@ -1,4 +1,4 @@
-package ejercicio05;
+package boletin1.ejercicio05;
 
 public class Rectángulo extends Polígono {
 

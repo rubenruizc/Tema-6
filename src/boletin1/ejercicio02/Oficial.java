@@ -1,11 +1,11 @@
-package ejercicio02;
+package boletin1.ejercicio02;
 
-public class Tecnico extends Operario {
-	
+public class Oficial extends Operario {
+
 	/**
 	 * Constructor vacío
 	 */
-	public Tecnico() {
+	public Oficial() {
 
 	}
 
@@ -14,15 +14,15 @@ public class Tecnico extends Operario {
 	 * 
 	 * @param nombre
 	 */
-	public Tecnico(String nombre) {
+	public Oficial(String nombre) {
 		super(nombre);
 	}
-	
+
 	public String toString() {
-		
+
 		String nombreTecnico = "";
 
-		nombreTecnico = super.toString() + " -> Técnico";
+		nombreTecnico = super.toString() + " -> Oficial";
 
 		return nombreTecnico;
 	}

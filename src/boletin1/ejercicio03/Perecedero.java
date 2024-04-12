@@ -1,4 +1,4 @@
-package ejercicio03;
+package boletin1.ejercicio03;
 
 public class Perecedero extends Productos {
 

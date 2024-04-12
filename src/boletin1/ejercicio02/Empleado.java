@@ -1,4 +1,4 @@
-package ejercicio02;
+package boletin1.ejercicio02;
 
 public class Empleado {
 

@@ -1,4 +1,4 @@
-package ejercicio01;
+package boletin1.ejercicio01;
 
 public class Hora {
 
