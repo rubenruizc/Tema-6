@@ -1,0 +1,44 @@
+abstract Vehículo
+- marca : String
+- modelo : String
+- color : String
+- marticula : String
+- motorEncendido : Boolean (false)
+- marcha : int (0 - pto.muerto)
+-velocidad : double (0.0)
+Es privado ya que las clases hijas no lo van a modificar,
+si acaso el main
+
++ parar() : void
++ arrancar() : void
+- subirMarcha() : void
+- bajarMarcha () : void
++ acelerar (double velocidad) : void
++ frenar () : void
+Acelerar y frenar es lo que determnina lo de subir y bajar marcha
+
+Vehículo(marca,mmodelo,color,matricula)
+
++ setMarcha (int marcha)
++ setMotor (boolean motor)
+
+Turismo extends Vehículo
+enum Tipo {PARTICULAR,PROFESIONAL}
+- numPlazas : int
+- tipoUso : Tipo
+
+Camion entends Vehículo
+- pesoMax : double
+- merPeligrosa : boolean
+
+Motocicleta extends Vehículo
+- Cilindrada : int
+
+---------------------------------------------
+propiedades son atributos
+funcionalidades son métodos 
+---------------------------------------------
+
+Funcionalidades:
+
++ requiereCarnet() : boolean

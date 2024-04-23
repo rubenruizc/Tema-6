@@ -1,6 +1,6 @@
 package boletin2.ejercicio01;
 
-public class Socio implements Comparable {
+public class Socio implements Comparable<Object> {
 
 	/**
 	 * Atributo donde guardaremos el id del socio
