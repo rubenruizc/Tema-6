@@ -1,0 +1,64 @@
+CuentaBancaria
+	- numeroCuenta: int
+	- saldo: double
+	- titulares: array[3]
+	-----------------------
+	+ CuentaBancaria(numeroCuenta, saldo, titulares)
+	+ getNumeroCuenta(): int
+	+ getSaldo(): int
+	+ getTitulares(): array
+	+ setSaldo(saldo: double): void
+	+ setTitulares(): void
+	+ ingresar(cantidad: int): boolean
+	+ retirar(cantidad: int): boolean
+	+ anyadirTitular(titular: Titular): boolean
+	+ eliminarTitular(titular: Titular): boolean
+	
+Titular
+	- dni: String
+	- nombre: String
+	- apellidos: String
+	- telefono: String
+	---------------------
+	+ Titular(dni, nombre, apellidos, telefono)
+	+ getDni(): String
+	+ getNombre(): String
+	+ getApellidos(): String
+	+ getTelefono(): String
+	+ setNombre(nombre): void
+	+ setApellidos(apellidos): void
+	+ setTelefono(telefono): void
+	
+CuentaAhorro extends CuentaBancaria
+	- cuota: double
+	- interes: double
+	----------------------
+	+ CuentaAhorro(numeroCuenta, saldo, titulares, cuota, interes)
+	+ saldoDisponible(): double
+	+ pagoCuota(): boolean
+
+CuentaCorriente extends CuentaBancaria
+	- porcentajeTransac: double
+	- numTransac: int
+	- transacciones: array
+	----------------------
+	+ CuentaCorriente(numeroCuenta, saldo, titulares, porcentajeTransac, numTransac, transacciones)
+	+ nuevaTransac()
+	+ consultarTransac()
+
+Transaccion
+	- dia: int
+	- mes: int
+	- anyo: int
+	- concepto: String
+	- importe: double
+	-----------------------------
+	+ Transaccion(dia, mes, anyo, concepto, importe)
+	+ getDia(): int
+	+ getMes(): int
+	+ getAnyo(): int
+	+ getConcepto(): String
+	+ getImporte(): double
+	
+
+	

@@ -1,0 +1,47 @@
+abstract Ficha
+	- id: int
+	- titulo: String
+	--------------------
+	+ Ficha(id, titulo)
+	+ getId(): int
+	+ getTitulo(): String
+	+ abstract prestar()
+	
+Libro extends Ficha
+	- autor: String
+	- editorial: String
+	---------------------
+	+ Libro(id, titulo, autor, editorial)
+	+ getAutor(): String
+	+ getEditorial(): String
+	+ setAutor(autor): void
+	+ setEditorial(editorial): void
+	+ prestar(): int
+
+Revista extends Ficha
+	- numero: int
+	- anyo: int
+	---------------------
+	+ Revista(id, titulo, numero, anyo)
+	+ getNumero(): int
+	+ getAnyo(): int
+	+ setNumero(numero): void
+	+ setAnyo(anyo): void
+	+ prestar(): int
+	
+DVD extends Ficha
+	- Enum {PELICULA, DOCUMENTAL, SERIE}
+	- director: String
+	- anyo: int
+	- tipo: enum
+	----------------------
+	+ DVD(id, titulo, numero, año, director, anyo, tipo)
+	+ getDirector(): String
+	+ getAnyo(): int
+	+ getTipo(): String
+	+ setDirector(director): void
+	+ setAnyo(anyo): void
+	+ setTipo(tipo): void
+	+ prestar(): int
+	
+	

@@ -1,0 +1,46 @@
+Agenda
+	- contactos: array
+	-------------------
+	+ Agenda(contactos)
+	+ buscaTelefono(nombre): String
+	+ editaNombre(nombre)
+	+ editaTelefono(nombre)
+	+ borraContacto(nombre)
+	
+Contacto
+	- nombre: String
+	- telefono: String
+	----------------------
+	+ Contacto(nombre, telefono)
+	+ getNombre(): String
+	+ getTelefono(): String
+	+ setNombre(nombre): void
+	+ setTelefono(telefono): void
+	+ equals(contacto): boolean
+
+Personas extends Contacto
+	- nombre: String
+	- telefono: String
+	- cumpleanyos: String
+	------------------------
+	+ Personas(nombre, telefono, cumpleanyos)
+	+ getNombre(): String
+	+ getTelefono(): String
+	+ getCumpleanyos(): String
+	+ setNombre(nombre): void
+	+ setTelefono(telefono): void
+	+ equals(persona): boolean
+
+Empresa extends Contacto
+	- nombre: String
+	- telefono: String
+	- web: String
+	-------------------
+	+ Empresa(nombre, telefono, web)
+	+ getNombre(): String
+	+ getTelefono(): String
+	+ getWeb(): String
+	+ setNombre(nombre): void
+	+ setTelefono(telefono): void
+	+ setWeb(web): void
+	+ equals(persona): boolean
