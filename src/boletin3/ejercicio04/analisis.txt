@@ -1,11 +1,4 @@
-Agenda
-	- contactos: array
-	-------------------
-	+ Agenda(contactos)
-	+ buscaTelefono(nombre): String
-	+ editaNombre(nombre)
-	+ editaTelefono(nombre)
-	+ borraContacto(nombre)
+
 	
 Contacto
 	- nombre: String
@@ -19,9 +12,7 @@ Contacto
 	+ equals(contacto): boolean
 
 Personas extends Contacto
-	- nombre: String
-	- telefono: String
-	- cumpleanyos: String
+	- cumpleanyos: String (dd/mm/aa)
 	------------------------
 	+ Personas(nombre, telefono, cumpleanyos)
 	+ getNombre(): String
@@ -32,8 +23,6 @@ Personas extends Contacto
 	+ equals(persona): boolean
 
 Empresa extends Contacto
-	- nombre: String
-	- telefono: String
 	- web: String
 	-------------------
 	+ Empresa(nombre, telefono, web)

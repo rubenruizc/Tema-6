@@ -1,14 +1,20 @@
 CuentaBancaria
-	- numeroCuenta: int
+	- numeroCuenta: String
 	- saldo: double
 	- titulares: array[3]
 	-----------------------
+	
+	Constructores
 	+ CuentaBancaria(numeroCuenta, saldo, titulares)
+	
+	GET/SET
 	+ getNumeroCuenta(): int
-	+ getSaldo(): int
+	+ getSaldo(): doubleººººººººººººººººººººººººººººººººººººº
 	+ getTitulares(): array
 	+ setSaldo(saldo: double): void
 	+ setTitulares(): void
+	
+	Funcionalidades
 	+ ingresar(cantidad: int): boolean
 	+ retirar(cantidad: int): boolean
 	+ anyadirTitular(titular: Titular): boolean
